@@ -4,12 +4,15 @@ int main()
     char a;
     printf("character:");
     scanf("%c", &a);
-    if (a >= 'a' && a <= 'z')
+    if (a >= 'A' && a <= 'Z')
     {
-        printf("It's a lower case character");
+        printf("It's a uppercase character");
     }
-    else
+    else if(a >= 'a' && a <= 'z')
     {
-        printf("It's a upper case character");
+        printf("It's a lowercase character");
+    }
+    else{
+        printf("Invalid Input");
     }
 }
